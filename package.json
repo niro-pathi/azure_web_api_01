@@ -15,8 +15,9 @@
   "bugs": {
     "url": "https://github.com/niro-pathi/azure_web_api_01/issues"
   },
-  "homepage": "https://github.com/niro-pathi/azure_web_api_01#readme"
-},
-"engines": {
+  "homepage": "https://github.com/niro-pathi/azure_web_api_01#readme",
+  "engines": {
      "node": "6.9.2"
- }
+  }
+}
+
