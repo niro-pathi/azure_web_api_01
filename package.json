@@ -1,0 +1,22 @@
+{
+  "name": "azure_web_api_01",
+  "version": "1.0.0",
+  "description": "First azure webapi with hapi framework",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/niro-pathi/azure_web_api_01.git"
+  },
+  "author": "Niro",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/niro-pathi/azure_web_api_01/issues"
+  },
+  "homepage": "https://github.com/niro-pathi/azure_web_api_01#readme"
+},
+"engines": {
+     "node": "6.9.2"
+ },
