@@ -4,6 +4,7 @@
   "description": "First azure webapi with hapi framework",
   "main": "app.js",
   "scripts": {
+    "start": "node ./app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,7 +18,7 @@
   },
   "homepage": "https://github.com/niro-pathi/azure_web_api_01#readme",
   "engines": {
-     "node": "6.9.2"
+     "node": "6.9.1"
   }
 }
 
