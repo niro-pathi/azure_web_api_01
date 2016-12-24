@@ -18,7 +18,9 @@
   },
   "homepage": "https://github.com/niro-pathi/azure_web_api_01#readme",
   "engines": {
-     "node": "6.9.1"
+    "node": "6.9.1"
+  },
+  "dependencies": {
+    "hapi": "^16.0.2"
   }
 }
-
