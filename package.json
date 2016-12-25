@@ -21,6 +21,7 @@
     "node": "6.9.1"
   },
   "dependencies": {
-    "hapi": "^16.0.2"
+    "hapi": "^16.0.2",
+    "hapi-swagger": "^7.5.0"
   }
 }

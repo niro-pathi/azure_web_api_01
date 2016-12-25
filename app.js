@@ -2,10 +2,14 @@
 
 var Hapi = require('hapi');
 var app = require('./routes/routes.js');
- 
+var routes = require('./routes/routes.js'); //require routes
+
 var port = process.env.PORT || 3000;
 var host = process.env.HOST || 'localhost';
-var server = new Hapi.Server(host,port,{ cors: true });
+
+var server = new Hapi.Server();
+
+server.connection({port: port});
 
 server.route(routes); //add routes
  
