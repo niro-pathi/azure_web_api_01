@@ -1,16 +1,14 @@
 'use strict';
 
-const hapi = require('hapi');
-const server = new hapi.Server();
-var routes = require('./routes/routes.js'); //require routes
-
-server.connection({host:'localhost', port: 3000});
+var Hapi = require('hapi');
+var app = require('./routes/routes.js');
+ 
+var port = process.env.PORT || 3000;
+var host = process.env.HOST || 'localhost';
+var server = new Hapi.Server(host,port,{ cors: true });
 
 server.route(routes); //add routes
-
-server.start((err) => {
-    if(err) {
-        throw err;
-    }
-    console.log(`Server running at: ${server.info.uri}`);
-})
+ 
+server.start(function() {
+    console.log("Hapi server started @ " + server.info.uri);
+});
