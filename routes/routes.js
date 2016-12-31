@@ -2,8 +2,8 @@
 module.exports = function() {
     var store = [
         {
-            name: 'toy',
-            price: '2'
+            name: 'toy test',
+            price: '2.50'
         }
     ]
 

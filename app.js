@@ -11,6 +11,19 @@ var server = new Hapi.Server();
 
 server.connection({port: port});
 
+server.register({
+    register: require('hapi-swagger'),
+    options: {
+        apiVersion: "0.0.1" 
+    }
+}, function (err) {
+    if (err) {
+        server.log(['error'], 'hapi-swagger load error: ' + err)
+    } else {
+        server.log(['start'], 'hapi-swagger interface loaded')
+    }
+});
+
 server.route(routes); //add routes
  
 server.start(function() {
